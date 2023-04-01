@@ -40,7 +40,7 @@ const Home = ({ images }: propsType) => {
   const [data, setData] = useState<resul[]>(results);
   const [search, setSearch] = useState<string>("");
 
-  const handleChange = (e: React.FormEvent<HTMLInputElement>): void => {
+  const handleChange = (e: any) => {
     setSearch(e.target.value);
   };
 
